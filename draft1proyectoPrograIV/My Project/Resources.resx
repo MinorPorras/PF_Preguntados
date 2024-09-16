@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tituloAdmin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloAdmin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_contraseña" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_contraseña.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloReporteGeneral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recurso\tituloReporteGeneral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloModCat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloModCat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloCategorías" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloCategorías.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloNivel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloNivel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_eliminarRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_eliminarRojo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloTemas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloTemas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloPeriodoNuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloPeriodoNuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloModAsig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloModAsig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloMenuPrincipal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloMenuPrincipal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_cerrarSesionBlanco1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_cerrarSesionBlanco1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloSeccion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloSeccion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloResp (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloResp (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloPeriodoSF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloPeriodoSF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloComenzarJugar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloComenzarJugar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloPersonalización" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloPersonalización.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_Agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_Agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FondoBlancoMorado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoBlancoMorado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_modificarAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_modificarAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloNuevaCat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloNuevaCat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloNuevoNivel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloNuevoNivel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_Regresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_Regresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_BuscarBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recurso\ICO_BuscarBlanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloModPre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloModPre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_TipodeCuenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_TipodeCuenta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloPreguntas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloPreguntas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloModResp (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloModResp (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_aceptar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_aceptar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloAsig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloAsig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloModEst" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloModEst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_cerrarSesionBlancoUsado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_cerrarSesionBlancoUsado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloNuevaResp (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloNuevaResp (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloCrerProf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloCrerProf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloReportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recurso\tituloReportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_Usuario1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_Usuario1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloCentroDeUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloCentroDeUsuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloNuevaAsig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloNuevaAsig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FondoMorado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoMorado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloPeriodo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloPeriodo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloModTema" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloModTema.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloModNivel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloModNivel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_Moneda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_Moneda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloReporteIndividual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recurso\tituloReporteIndividual.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloNuevaResp (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloNuevaResp (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_cerrarAPPBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_cerrarAPPBlanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FondoAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FondoAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_AgregarVerde" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_AgregarVerde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_Usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_Usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloModProf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloModProf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_BuscarImagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_BuscarImagen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PJTodos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PJTodos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_iniciarSesionBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_iniciarSesionBlanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloCentroUsuarioMorado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloCentroUsuarioMorado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloActualizarCuenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloActualizarCuenta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloInfoEstudiantil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloInfoEstudiantil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fondo}BlancoAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo}BlancoAzul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloResultados" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloResultados.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TituloInicioDeSesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TituloInicioDeSesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloNuevoTema" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloNuevoTema.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_BuscarNaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_BuscarNaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_Reportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_Reportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICO_cerrarSesionBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICO_cerrarSesionBlanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloPeriodoMod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloPeriodoMod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloModSeccion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloModSeccion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close Window" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close Window.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloMenuPricipalMorado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloMenuPricipalMorado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloActCuentaMorado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloActCuentaMorado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloNuevaPre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloNuevaPre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloCrearEst" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloCrearEst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloNuevaSeccion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloNuevaSeccion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloProfesores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tituloProfesores.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tituloGenReporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recurso\tituloGenReporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

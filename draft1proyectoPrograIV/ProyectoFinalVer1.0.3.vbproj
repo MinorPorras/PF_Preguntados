@@ -1,0 +1,1202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{913AD019-D7DD-43E7-9155-6C6048B6F4F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>draft1proyectoPrograIV.My.MyApplication</StartupObject>
+    <RootNamespace>draft1proyectoPrograIV</RootNamespace>
+    <AssemblyName>Preguntados</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\Preguntados\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Preguntados/</UpdateUrl>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Preguntados.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Preguntados.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Recurso\PREGUNTADOS.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F6397B65478007F934EEB0EABF59A4A803EB8258</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ProyectoFinalVer1.0.3_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.VisOcx, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.6.0.1\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ClsAsig.vb" />
+    <Compile Include="ClsCategoria.vb" />
+    <Compile Include="ClsPeriodo.vb" />
+    <Compile Include="ClsProf.vb" />
+    <Compile Include="ClsSeccion.vb" />
+    <Compile Include="ClsTema.vb" />
+    <Compile Include="CONEXION.vb" />
+    <Compile Include="E_AActAdmin.Designer.vb">
+      <DependentUpon>E_AActAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_AActAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_EActCuenta.Designer.vb">
+      <DependentUpon>E_EActCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_EActCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PNuevoReporteGeneral.Designer.vb">
+      <DependentUpon>E_PNuevoReporteGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PNuevoReporteGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PNuevoReporteIndividual.Designer.vb">
+      <DependentUpon>E_PNuevoReporteIndividual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PNuevoReporteIndividual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PModAsig.Designer.vb">
+      <DependentUpon>E_PModAsig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PModAsig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PModCategoria.Designer.vb">
+      <DependentUpon>E_PModCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PModCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PModNivel.Designer.vb">
+      <DependentUpon>E_PModNivel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PModNivel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PModPeriodo.Designer.vb">
+      <DependentUpon>E_PModPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PModPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PModResp.Designer.vb">
+      <DependentUpon>E_PModResp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PModResp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PModSeccion.Designer.vb">
+      <DependentUpon>E_PModSeccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PModSeccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PModTema.Designer.vb">
+      <DependentUpon>E_PModTema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PModTema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PActUsuarioEst.Designer.vb">
+      <DependentUpon>E_PActUsuarioEst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PActUsuarioEst.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PNuevaAsig.Designer.vb">
+      <DependentUpon>E_PNuevaAsig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PNuevaAsig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PNuevaCategoria.Designer.vb">
+      <DependentUpon>E_PNuevaCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PNuevaCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PNuevaPregunta.Designer.vb">
+      <DependentUpon>E_PNuevaPregunta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PNuevaPregunta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PNuevaRespuesta.Designer.vb">
+      <DependentUpon>E_PNuevaRespuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PNuevaRespuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PNuevaSeccion.Designer.vb">
+      <DependentUpon>E_PNuevaSeccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PNuevaSeccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PNuevoNivel.Designer.vb">
+      <DependentUpon>E_PNuevoNivel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PNuevoNivel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PNuevoPeriodo.Designer.vb">
+      <DependentUpon>E_PNuevoPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PNuevoPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PNuevoTema.Designer.vb">
+      <DependentUpon>E_PNuevoTema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PNuevoTema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PAActUsuarioProf.Designer.vb">
+      <DependentUpon>E_PAActUsuarioProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PAActUsuarioProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PNuevoUsuarioEst.Designer.vb">
+      <DependentUpon>E_PNuevoUsuarioEst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PNuevoUsuarioEst.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_ANuevoUsuarioProf.Designer.vb">
+      <DependentUpon>E_ANuevoUsuarioProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_ANuevoUsuarioProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_EJuegoCategoria.Designer.vb">
+      <DependentUpon>P_EJuegoCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_EJuegoCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_EJuegoPregunta2.Designer.vb">
+      <DependentUpon>P_EJuegoPregunta2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_EJuegoPregunta2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_EJuegoResultados.Designer.vb">
+      <DependentUpon>P_EJuegoResultados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_EJuegoResultados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_EJuegoTema.Designer.vb">
+      <DependentUpon>P_EJuegoTema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_EJuegoTema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INTERACCION_BD.vb" />
+    <Compile Include="ClsNivel.vb" />
+    <Compile Include="PROCESOS_BD.vb" />
+    <Compile Include="PROCESO_JUEGO.vb" />
+    <Compile Include="P_ACuenta.Designer.vb">
+      <DependentUpon>P_ACuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_ACuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_EComenzarJuego.Designer.vb">
+      <DependentUpon>P_EComenzarJuego.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_EComenzarJuego.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_ECuenta.Designer.vb">
+      <DependentUpon>P_ECuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_ECuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_EPrincipal.Designer.vb">
+      <DependentUpon>P_EPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_EPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_EJuegoPregunta.Designer.vb">
+      <DependentUpon>P_EJuegoPregunta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_EJuegoPregunta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_EReporteEst.Designer.vb">
+      <DependentUpon>P_EReporteEst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_EReporteEst.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PGenerandoInforme.Designer.vb">
+      <DependentUpon>P_PGenerandoInforme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PGenerandoInforme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PGenReporteGeneral.Designer.vb">
+      <DependentUpon>P_PGenReporteGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PGenReporteGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PGenReporteIndividual.Designer.vb">
+      <DependentUpon>P_PGenReporteIndividual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PGenReporteIndividual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PReporteGeneralPrincipal.Designer.vb">
+      <DependentUpon>P_PReporteGeneralPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PReporteGeneralPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PReporteIndividualPrincipal.Designer.vb">
+      <DependentUpon>P_PReporteIndividualPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PReporteIndividualPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PReportesPrincipal.Designer.vb">
+      <DependentUpon>P_PReportesPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PReportesPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_TLogin.Designer.vb">
+      <DependentUpon>P_TLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_TLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_APrincipal.Designer.vb">
+      <DependentUpon>P_APrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_APrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PAsignatura.Designer.vb">
+      <DependentUpon>P_PAsignatura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PAsignatura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PCategoria.Designer.vb">
+      <DependentUpon>P_PCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_TInicialización.Designer.vb">
+      <DependentUpon>P_TInicialización.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_TInicialización.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PInfoEstudiantil.Designer.vb">
+      <DependentUpon>P_PInfoEstudiantil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PInfoEstudiantil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_PModPregunta.Designer.vb">
+      <DependentUpon>E_PModPregunta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E_PModPregunta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PNivel.Designer.vb">
+      <DependentUpon>P_PNivel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PNivel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PPeriodo.Designer.vb">
+      <DependentUpon>P_PPeriodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PPersonalizacion.Designer.vb">
+      <DependentUpon>P_PPersonalizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PPersonalizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PPreguntas.Designer.vb">
+      <DependentUpon>P_PPreguntas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PPreguntas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PPrincipal.Designer.vb">
+      <DependentUpon>P_PPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="P_PRespuestas.Designer.vb">
+      <DependentUpon>P_PRespuestas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PRespuestas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PSeccion.Designer.vb">
+      <DependentUpon>P_PSeccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PSeccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PTemas.Designer.vb">
+      <DependentUpon>P_PTemas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PTemas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PUsuariosEst.Designer.vb">
+      <DependentUpon>P_PUsuariosEst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PUsuariosEst.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_AUsuariosProf.Designer.vb">
+      <DependentUpon>P_AUsuariosProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_AUsuariosProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_PCuenta.Designer.vb">
+      <DependentUpon>P_PCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="P_PCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTES.vb" />
+    <Compile Include="VARIABLES_GLOBALES.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="E_AActAdmin.resx">
+      <DependentUpon>E_AActAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_EActCuenta.resx">
+      <DependentUpon>E_EActCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PNuevoReporteGeneral.resx">
+      <DependentUpon>E_PNuevoReporteGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PNuevoReporteIndividual.resx">
+      <DependentUpon>E_PNuevoReporteIndividual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PModAsig.resx">
+      <DependentUpon>E_PModAsig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PModCategoria.resx">
+      <DependentUpon>E_PModCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PModNivel.resx">
+      <DependentUpon>E_PModNivel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PModPeriodo.resx">
+      <DependentUpon>E_PModPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PModResp.resx">
+      <DependentUpon>E_PModResp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PModSeccion.resx">
+      <DependentUpon>E_PModSeccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PModTema.resx">
+      <DependentUpon>E_PModTema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PActUsuarioEst.resx">
+      <DependentUpon>E_PActUsuarioEst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PNuevaAsig.resx">
+      <DependentUpon>E_PNuevaAsig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PNuevaCategoria.resx">
+      <DependentUpon>E_PNuevaCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PNuevaPregunta.resx">
+      <DependentUpon>E_PNuevaPregunta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PNuevaRespuesta.resx">
+      <DependentUpon>E_PNuevaRespuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PNuevaSeccion.resx">
+      <DependentUpon>E_PNuevaSeccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PNuevoNivel.resx">
+      <DependentUpon>E_PNuevoNivel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PNuevoPeriodo.resx">
+      <DependentUpon>E_PNuevoPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PNuevoTema.resx">
+      <DependentUpon>E_PNuevoTema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PAActUsuarioProf.resx">
+      <DependentUpon>E_PAActUsuarioProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PNuevoUsuarioEst.resx">
+      <DependentUpon>E_PNuevoUsuarioEst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_ANuevoUsuarioProf.resx">
+      <DependentUpon>E_ANuevoUsuarioProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_EJuegoCategoria.resx">
+      <DependentUpon>P_EJuegoCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_EJuegoPregunta2.resx">
+      <DependentUpon>P_EJuegoPregunta2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_EJuegoResultados.resx">
+      <DependentUpon>P_EJuegoResultados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_EJuegoTema.resx">
+      <DependentUpon>P_EJuegoTema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_ACuenta.resx">
+      <DependentUpon>P_ACuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_EComenzarJuego.resx">
+      <DependentUpon>P_EComenzarJuego.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_ECuenta.resx">
+      <DependentUpon>P_ECuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_EPrincipal.resx">
+      <DependentUpon>P_EPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_EReporteEst.resx">
+      <DependentUpon>P_EReporteEst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PCuenta.resx">
+      <DependentUpon>P_PCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_EJuegoPregunta.resx">
+      <DependentUpon>P_EJuegoPregunta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PGenerandoInforme.resx">
+      <DependentUpon>P_PGenerandoInforme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PGenReporteGeneral.resx">
+      <DependentUpon>P_PGenReporteGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PGenReporteIndividual.resx">
+      <DependentUpon>P_PGenReporteIndividual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PReporteGeneralPrincipal.resx">
+      <DependentUpon>P_PReporteGeneralPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PReporteIndividualPrincipal.resx">
+      <DependentUpon>P_PReporteIndividualPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PReportesPrincipal.resx">
+      <DependentUpon>P_PReportesPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_TLogin.resx">
+      <DependentUpon>P_TLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_APrincipal.resx">
+      <DependentUpon>P_APrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PAsignatura.resx">
+      <DependentUpon>P_PAsignatura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PCategoria.resx">
+      <DependentUpon>P_PCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_TInicialización.resx">
+      <DependentUpon>P_TInicialización.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PInfoEstudiantil.resx">
+      <DependentUpon>P_PInfoEstudiantil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_PModPregunta.resx">
+      <DependentUpon>E_PModPregunta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PNivel.resx">
+      <DependentUpon>P_PNivel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PPeriodo.resx">
+      <DependentUpon>P_PPeriodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PPersonalizacion.resx">
+      <DependentUpon>P_PPersonalizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PPreguntas.resx">
+      <DependentUpon>P_PPreguntas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PPrincipal.resx">
+      <DependentUpon>P_PPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PRespuestas.resx">
+      <DependentUpon>P_PRespuestas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PSeccion.resx">
+      <DependentUpon>P_PSeccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PTemas.resx">
+      <DependentUpon>P_PTemas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_PUsuariosEst.resx">
+      <DependentUpon>P_PUsuariosEst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_AUsuariosProf.resx">
+      <DependentUpon>P_AUsuariosProf.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Manuales\Manual de usuario.pdf" />
+    <None Include="Manuales\Manual Técnico.pdf" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ProyectoFinalVer1.0.3_TemporaryKey.pfx" />
+    <None Include="Resources\ICO_Agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo}BlancoAzul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_Regresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_BuscarNaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_modificarAzul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_eliminarRojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloProfesores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloTemas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloSeccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloNuevaResp %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloResp %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_cerrarSesionBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_cerrarSesionBlanco1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_cerrarSesionBlancoUsado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_cerrarAPPBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloMenuPrincipal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_Reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoAzul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloPreguntas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloPersonalización.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloNivel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloCentroDeUsuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloCategorías.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloAsig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TituloInicioDeSesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_iniciarSesionBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoMorado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_contraseña.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_TipodeCuenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloCrerProf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_BuscarImagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloCrearEst.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloNuevoTema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloNuevoNivel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloNuevaSeccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloNuevaPre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloNuevaCat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloNuevaAsig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloModProf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloModEst.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloModTema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloModSeccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloModPre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloModNivel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloModCat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloModAsig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloPeriodo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloPeriodoSF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloPeriodoNuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloPeriodoMod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_AgregarVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloNuevaResp %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloModResp %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloAdmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloActualizarCuenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloInfoEstudiantil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoBlancoMorado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloMenuPricipalMorado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PJTodos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloCentroUsuarioMorado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloActCuentaMorado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloComenzarJugar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tituloResultados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICO_Moneda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bd\Proyectofinal.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Manuales\Intrucciones de Adminidtrador.txt" />
+    <Content Include="Recurso\AudioPresentaciónTutorialJuego.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\FondoAzul.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\FondoBlancoMorado.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\FondoMorado.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\Fondo}BlancoAzul.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_Agregar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_AgregarVerde.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_BuscarBlanco.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_BuscarImagen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_BuscarNaranja.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_cerrarAPPBlanco.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_cerrarSesionBlanco.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_cerrarSesionBlancoUsado.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_contraseña.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_eliminarRojo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_iniciarSesionBlanco.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_modificar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_modificarAzul.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_Moneda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_Regresar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_Reportes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_TipodeCuenta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\ICO_Usuario1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\IntroEvo.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\Logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\pizarraFondoMate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\PJArte.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\PJCiencia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\PJDeporte.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\PJEntretenimiento.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\PJGeografia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\PJHistoria.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\PJTodos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\PJWillyRuleta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\PREGUNTADOS.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\smooth-684-cm-54202.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloActCuentaMorado.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloActualizarCuenta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloAdmin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloAsig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloCategorías.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloCentroDeUsuario.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloCentroUsuarioMorado.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloComenzarJugar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloCrearEst.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloCrerProf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloGenReporte.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloInfoEstudiantil.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\TituloInicioDeSesion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloMenuPricipalMorado.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloMenuPrincipal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloModAsig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloModCat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloModEst.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloModNivel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloModPre.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloModProf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloModResp %281%29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloModSeccion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloModTema.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloNivel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloNuevaAsig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloNuevaCat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloNuevaPre.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloNuevaResp %281%29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloNuevaSeccion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloNuevoNivel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloNuevoTema.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloPeriodoMod.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloPeriodoNuevo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloPeriodoSF.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloPersonalización.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloPreguntas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloProfesores.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloReportes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloReporteGeneral.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloReporteIndividual.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloResp %281%29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloSeccion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloSeleccionTemaEst.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\tituloTemas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso\videoFondoTemaMate.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="publish\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

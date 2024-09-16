@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------
+Usuario administrador de la aplicación
+---------------------------------------------------------------------------------------------
+Por medio del uso de este usuario de administrador de la aplicación se podrá crear el primer usuario del tipo profesor para comenzara a usar la aplicación, al ingresar los datos asegúrese de que los está escribiendo bien, mas lo mejor sería que simplemente copie y pegue los datos que se le presentan a continuación
+---------------------------------------------------------------------------------------------
+Usuario: SU
+Contraseña: 17964
